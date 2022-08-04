@@ -3,11 +3,11 @@ Documentation    The objective of this test case is to Verify the items on the S
 Library          SeleniumLibrary
 Library          Collections
 Resource         ../Resources/resources.robot
+Test Setup       Open the browser & launch the URL
 Test Teardown    close browser
 
 *** Test Cases ***
 Validate Successful Login
-    Open the browser & launch the URL
     maximise the browser window
     Populate username in the Username field
     Populate password in the Password field
@@ -16,9 +16,6 @@ Validate Successful Login
     Verify the items on the ShopPage
 
 ***keywords ***
-open the browser & launch the URL
-    create webdriver    Chrome  executable_path=C:/work/chromedriver.exe
-    go to               ${URL}
 
 maximise the browser window
     maximize browser window

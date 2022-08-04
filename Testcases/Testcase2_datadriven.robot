@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation    The objective of this test case is to validate data driven approach
 Library          SeleniumLibrary
+Test Setup       Open the browser & launch the URL
 Test Teardown    close browser
 Library         ../Testdata/Readexceldata.py
 
@@ -17,15 +18,11 @@ ${login_password}
 
 *** Test Cases ***
 Validate Successful Login
-    Open the browser & launch the URL
     maximise the browser window
     Return number of rows
     Return cell data, Populate username & password and Select Sign In button
 
 ***keywords ***
-open the browser & launch the URL
-    create webdriver    Chrome  executable_path=C:/work/chromedriver.exe
-    go to               ${URL}
 
 maximise the browser window
     maximize browser window

@@ -3,14 +3,14 @@ Documentation    The objective of this test case is to add the item in the card 
 Library          SeleniumLibrary
 Library          Collections
 Resource         ../Resources/resources.robot
-#Test Teardown    close browser
+Test Setup       Open the browser & launch the URL
+Test Teardown    close browser
 
 *** Variables ***
 ${cart_name}
 
 *** Test Cases ***
 Validate Successful Login
-    Open the browser & launch the URL
     maximise the browser window
     Populate username in the Username field
     Populate password in the Password field
@@ -20,9 +20,6 @@ Validate Successful Login
     Add item in the cart based on the cart name provided    iphone X
 
 ***keywords ***
-open the browser & launch the URL
-    create webdriver    Chrome  executable_path=C:/work/chromedriver.exe
-    go to               ${URL}
 
 maximise the browser window
     maximize browser window

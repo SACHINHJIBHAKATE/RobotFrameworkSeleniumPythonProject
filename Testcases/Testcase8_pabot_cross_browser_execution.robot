@@ -2,7 +2,7 @@
 Documentation    The objective of this test case is to validate cross browser execution
 Library          SeleniumLibrary
 Resource         ../Resources/resources.robot
-Test Setup       Launch the URL
+Test Setup       Open the browser & launch the URL
 Test Teardown    close browser
 
 # Best approach is to provide in the browser name from the command on runtime
@@ -24,11 +24,6 @@ Validate if the application is launched
     maximise the browser window
 
 ***keywords ***
-
-# As all the test cases will use this keyword, we can write this in the 'resources.robot' file
-Launch the URL
-    create webdriver    ${browser}  executable_path=../Resources/Drivers/${browser}
-    go to               ${URL}
 
 maximise the browser window
     maximize browser window

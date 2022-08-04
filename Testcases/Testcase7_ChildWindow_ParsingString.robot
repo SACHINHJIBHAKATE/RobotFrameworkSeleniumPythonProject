@@ -4,15 +4,11 @@ Library          SeleniumLibrary
 Library          Collections
 Library          String
 Resource         ../Resources/resources.robot
-#Test Teardown    close browser
-
-*** Keywords ***
-# If we need to use the variable (created under the
-    set global variable         ${email_address}
+Test Setup       Open the browser & launch the URL
+Test Teardown    close browser
 
 *** Test Cases ***
 Validate Successful Login
-    Open the browser & launch the URL
     maximise the browser window
     Select the link on the LoginPage
     Switch to the child window
@@ -25,10 +21,6 @@ Validate Successful Login
     Select Sign In button
 
 ***keywords ***
-
-open the browser & launch the URL
-    create webdriver    Chrome  executable_path=C:/work/chromedriver.exe
-    go to               ${URL}
 
 maximise the browser window
     maximize browser window

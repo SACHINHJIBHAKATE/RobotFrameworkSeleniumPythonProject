@@ -2,11 +2,11 @@
 Documentation    The objective of this test case is to handle different Web Elements such as radio buttons, dropdowns, alerts, child windows
 Library          SeleniumLibrary
 Resource         ../Resources/resources.robot
-#Test Teardown    close browser
+Test Setup       Open the browser & launch the URL
+Test Teardown    close browser
 
 *** Test Cases ***
 Validate Successful Login
-    Open the browser & launch the URL
     maximise the browser window
     Populate username in the Username field
     Populate password in the Password field
@@ -19,9 +19,6 @@ Validate Successful Login
     Select Sign In button
 
 ***keywords ***
-open the browser & launch the URL
-    create webdriver    Chrome  executable_path=C:/work/chromedriver.exe
-    go to               ${URL}
 
 maximise the browser window
     maximize browser window

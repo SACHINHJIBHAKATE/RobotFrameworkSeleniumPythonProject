@@ -4,11 +4,12 @@ Library          SeleniumLibrary
 Resource         ../Resources/resources.robot
 Resource         ../PageObjects/LoginPage.robot
 Resource         ../PageObjects/ShopPage.robot
+Test Setup       Open the browser & launch the URL
+Test Teardown    close browser
 
 *** Test Cases ***
 Login & add Items to Cart
     [TAGS]    SMOKE
-    Open the browser & launch the URL
     maximise the browser window
     Populate username in the Username field
     Populate password in the Password field
@@ -18,9 +19,6 @@ Login & add Items to Cart
     #Select Home link
 
 ***keywords ***
-open the browser & launch the URL
-    create webdriver    Chrome  executable_path=C:/work/chromedriver.exe
-    go to               ${URL}
 
 maximise the browser window
     maximize browser window
