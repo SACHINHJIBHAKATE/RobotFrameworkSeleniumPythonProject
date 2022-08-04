@@ -7,14 +7,14 @@ Test Teardown    close browser
 
 *** Test Cases ***
 Validate Successful Login
-    [TAGS]    SMOKE     REGRESSION
+    [TAGS]    SMOKE
     maximise the browser window
     Populate username in the Username field
     Populate password in the Password field
     Select Sign In button
 
 Validate if the application is launched
-    [TAGS]    NEWFEATURE
+    [TAGS]    REGRESSION
     maximise the browser window
 
 ***keywords ***
