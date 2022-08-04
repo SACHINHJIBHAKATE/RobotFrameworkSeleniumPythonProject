@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    The objective of this test case is to validate the login scenarios
+Documentation    The objective of this test case is to validate data driven approach
 Library          SeleniumLibrary
 Test Teardown    close browser
 Library         ../Testdata/Readexceldata.py
