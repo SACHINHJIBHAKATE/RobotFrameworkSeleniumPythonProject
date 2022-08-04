@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220804 14:45:42.825" rpa="false" schemaversion="3">
+<suite id="s1" name="Testcase8 pabot cross browser execution" source="C:\Users\028107744\PycharmProjects\RobotFrameworkSeleniumPythonProject\Testcases\Testcase8_pabot_cross_browser_execution.robot">
+<test id="s1-t1" name="Validate if the application is launched" line="15">
+<kw name="Launch the URL">
+<msg timestamp="20220804 14:45:43.248" level="FAIL">Keyword 'Launch the URL' expected 1 argument, got 0.</msg>
+<status status="FAIL" starttime="20220804 14:45:43.248" endtime="20220804 14:45:43.248"/>
+</kw>
+<kw name="maximise the browser window">
+<status status="NOT RUN" starttime="20220804 14:45:43.249" endtime="20220804 14:45:43.249"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220804 14:45:43.249" endtime="20220804 14:45:43.250"/>
+</kw>
+<status status="FAIL" starttime="20220804 14:45:43.247" endtime="20220804 14:45:43.250">Keyword 'Launch the URL' expected 1 argument, got 0.</status>
+</test>
+<doc>The objective of this test case is to validate the login scenarios</doc>
+<status status="FAIL" starttime="20220804 14:45:42.842" endtime="20220804 14:45:43.261"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Testcase8 pabot cross browser execution">Testcase8 pabot cross browser execution</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

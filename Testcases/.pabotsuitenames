@@ -1,0 +1,6 @@
+datasources:3d6bdf26c042f266f56f06c630c26879ff2feed3
+commandlineoptions:65f95c924ba97541f47949701c4e3c51192a5b43
+suitesfrom:no-suites-from-option
+file:3269964ccd25e3273d712ff94b380ec741efd033
+--test Testcase8 pabot cross browser execution.Validate Successful Login
+--test Testcase8 pabot cross browser execution.Validate if the application is launched

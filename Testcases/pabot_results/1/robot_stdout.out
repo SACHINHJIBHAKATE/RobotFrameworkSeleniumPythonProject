@@ -1,0 +1,19 @@
+==============================================================================
+Testcase8 pabot cross browser execution :: The objective of this test case ...
+==============================================================================
+Validate if the application is launched                                 
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\028107744\PycharmProjects\RobotFrameworkSeleniumPythonProject\Testcases\Testcase8_pabot_cross_browser_execution.robot:15
+    T:  Validate if the application is launched    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\028107744\PycharmProjects\RobotFrameworkSeleniumPythonProject\Testcases\Testcase8_pabot_cross_browser_execution.robot:16
+      Launch the URL    
+______________________________________________________________________________
+| FAIL |
+Keyword 'Launch the URL' expected 1 argument, got 0.
+------------------------------------------------------------------------------
+Testcase8 pabot cross browser execution :: The objective of this t... | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\028107744\PycharmProjects\RobotFrameworkSeleniumPythonProject\Testcases\pabot_results\1\output.xml
