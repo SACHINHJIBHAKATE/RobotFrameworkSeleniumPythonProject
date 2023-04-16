@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    The objective of this test case is to handle child window, extract data from the child window & switch to the main window
+Documentation    The objective of this test case is to handle child window, extract data from the child window, switch to the main window & populate data in main window
 Library          SeleniumLibrary
 Library          Collections
 Library          String
@@ -8,7 +8,7 @@ Test Setup       Open the browser & launch the URL
 Test Teardown    close browser
 
 *** Test Cases ***
-Validate handling child window, extract data from the child window & switch to the main window
+Validate handling child window, extract data from the child window & switch to the main window & populate data in main window
     [TAGS]    NEWFEATURE
     maximise the browser window
     Select the link on the LoginPage
