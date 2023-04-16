@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    The objective of this test case is to validate data driven approach
+Documentation    The objective of this test case is to validate data driven approach (Extract Data from Excel and Login)
 Library          SeleniumLibrary
 Test Setup       Open the browser & launch the URL
 Test Teardown    close browser
@@ -17,10 +17,15 @@ ${login_username}
 ${login_password}
 
 *** Test Cases ***
-Validate Successful Login
+Data Driven Approach - Extract Data from Excel and Login
+    [TAGS]    REGRESSION
     maximise the browser window
-    Return number of rows
-    Return cell data, Populate username & password and Select Sign In button
+    Extract excel data (Username & Password)
+    Populate username (extracted from excel) in the Username field
+    Populate password (extracted from excel) in the Password field
+    Select Sign In button
+    Wait until page contains the Home link
+    Validate that the User is navigated to the Products Page
 
 ***keywords ***
 

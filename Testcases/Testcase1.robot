@@ -1,21 +1,28 @@
 *** Settings ***
-Documentation    The objective of this test case is to validate the login scenarios
+Documentation    The objective of this test case is to validate the login scenarios (unsuccessful and successful login)
 Library          SeleniumLibrary
 Resource         ../Resources/resources.robot
 Test Setup       Open the browser & launch the URL
 Test Teardown    close browser
 
 *** Test Cases ***
+
+Validate Unsuccessful Login
+    [TAGS]    SMOKE
+    maximise the browser window
+    Populate username in the Username field
+    Populate password in the Password field
+    Select Sign In button
+    Verify the error message is correct
+
 Validate Successful Login
     [TAGS]    SMOKE
     maximise the browser window
     Populate username in the Username field
     Populate password in the Password field
     Select Sign In button
-
-Validate if the application is launched
-    [TAGS]    REGRESSION
-    maximise the browser window
+    Wait until page contains the Home link
+    Validate that the User is navigated to the Products Page
 
 ***keywords ***
 

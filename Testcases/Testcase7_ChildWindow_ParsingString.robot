@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    The objective of this test case is to handle child window, perform operations in child window (including parsing string), switch to the main window
+Documentation    The objective of this test case is to handle child window, extract data from the child window & switch to the main window
 Library          SeleniumLibrary
 Library          Collections
 Library          String
@@ -8,14 +8,15 @@ Test Setup       Open the browser & launch the URL
 Test Teardown    close browser
 
 *** Test Cases ***
-Validate Successful Login
+Validate handling child window, extract data from the child window & switch to the main window
+    [TAGS]    NEWFEATURE
     maximise the browser window
     Select the link on the LoginPage
     Switch to the child window
-    Verify that the user is switched to the child window
+    Validate that user is switched to the child window
     Extract the email id from string in the child window
     Switch to Main Window
-    Verify that the user is switched to the main window
+    Validate that user is switched to the main window
     Populate username in the Username field
     Populate password in the Password field
     Select Sign In button

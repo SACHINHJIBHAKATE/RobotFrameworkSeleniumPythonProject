@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    The objective of this test case is to Verify the items on the ShopPage
+Documentation    The objective of this test case is to Verify Products on the ShopPage
 Library          SeleniumLibrary
 Library          Collections
 Resource         ../Resources/resources.robot
@@ -7,13 +7,13 @@ Test Setup       Open the browser & launch the URL
 Test Teardown    close browser
 
 *** Test Cases ***
-Validate Successful Login
+Verify Products on the ShopPage
     maximise the browser window
     Populate username in the Username field
     Populate password in the Password field
     Select Sign In button
     Wait until page contains the Home link
-    Verify the items on the ShopPage
+    Verify Products on the ShopPage
 
 ***keywords ***
 

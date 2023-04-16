@@ -1,22 +1,25 @@
 *** Settings ***
-Documentation    The objective of this test case is to handle different Web Elements such as radio buttons, dropdowns, alerts, child windows
+Documentation    The objective of this test case is to handle different Web Elements such as radio buttons, dropdowns & popup message alerts
 Library          SeleniumLibrary
 Resource         ../Resources/resources.robot
 Test Setup       Open the browser & launch the URL
 Test Teardown    close browser
 
 *** Test Cases ***
-Validate Successful Login
+Validate Login Form (handling different Web Elements such as radio buttons, dropdowns & popup message alerts)
+    [TAGS]    NEWFEATURE
     maximise the browser window
     Populate username in the Username field
     Populate password in the Password field
     Select the User radio button
     Wait for alert popup to be visible
     Select Okay button the alert popup
-    Select value from the dropdown
+    Select User Category from the dropdown
     Select the terms and conditions checkbox
-    Verify if the terms of conditions checkbox is selected
+    Validate if the terms of conditions checkbox is selected
     Select Sign In button
+    Wait until page contains the Home link
+    Validate that the is navigated to the Products Page
 
 ***keywords ***
 
