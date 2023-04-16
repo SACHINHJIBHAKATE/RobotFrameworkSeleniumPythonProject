@@ -7,7 +7,7 @@ Test Teardown    close browser
 
 *** Test Cases ***
 
-Validate Unsuccessful Login
+Validate Unsuccessful Logina
     [TAGS]    SMOKE
     maximise the browser window
     Populate username in the Username field
