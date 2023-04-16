@@ -8,6 +8,7 @@ Test Teardown    close browser
 
 *** Test Cases ***
 Verify Products on the ShopPage
+    [TAGS]    REGRESSION
     maximise the browser window
     Populate username in the Username field
     Populate password in the Password field
