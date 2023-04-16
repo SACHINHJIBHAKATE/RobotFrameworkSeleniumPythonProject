@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    The objective of this test case is to Verify Products on the ShopPage
+Documentation    The objective of this test case is to Validate Products on the ShopPage
 Library          SeleniumLibrary
 Library          Collections
 Resource         ../Resources/resources.robot
